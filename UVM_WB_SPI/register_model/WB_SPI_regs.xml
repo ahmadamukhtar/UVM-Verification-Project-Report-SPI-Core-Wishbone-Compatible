@@ -1,0 +1,160 @@
+<?xml version="1.0"?>
+<!-- REQUIRED HEADER INFO - DOES NOT END UP IN ANY GENERATED SV FILES -->
+<spirit:component
+   xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009"
+   xmlns:cadence="http://www.cadence.com/SPIRIT/1685-2009/vendorExtensions"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.cadence.com/SPIRIT/1685-2009/vendorExtensions
+     http://www.cadence.com/SPIRIT/1685-2009/vendorExtensions/cadenceSpiritVendorExtensions.xsd
+     http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009
+     http://www.accellera.org/images/xmlschema/spirit/1685-2009/index.xsd">
+    <!-- REQUIRED HEADER INFO -->
+    <spirit:vendor>Cadence_Design_Systems</spirit:vendor>
+    <spirit:library>WB_SPI_Registers</spirit:library>
+    <spirit:name>WB_SPI_regs</spirit:name>
+    <spirit:version>1.0</spirit:version>
+
+    <!-- Memory Map -->
+    <spirit:memoryMaps>
+        <spirit:memoryMap>
+            <spirit:name>WB_SPI_memory</spirit:name>
+
+            <!-- Address Block -->
+            <spirit:addressBlock>
+                <spirit:name>WB_SPI_registers</spirit:name>
+                <spirit:baseAddress>0x0000</spirit:baseAddress>
+                <spirit:typeIdentifier>WB_SPI_regs_c</spirit:typeIdentifier>
+                <spirit:range>0x10</spirit:range>
+                <spirit:width>8</spirit:width>
+
+                <!-- SPCR Register -->
+                <spirit:register>
+                    <spirit:name>SPCR</spirit:name>
+                    <spirit:addressOffset>0x00</spirit:addressOffset>
+                    <spirit:typeIdentifier>SPCR_c</spirit:typeIdentifier>
+                    <spirit:size>8</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x10</spirit:value>
+                        <spirit:mask>0xFF</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>SPIE</spirit:name>
+                        <spirit:bitOffset>7</spirit:bitOffset>
+                        <spirit:bitWidth>1</spirit:bitWidth>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>SPE</spirit:name>
+                        <spirit:bitOffset>6</spirit:bitOffset>
+                        <spirit:bitWidth>1</spirit:bitWidth>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>MSTR</spirit:name>
+                        <spirit:bitOffset>4</spirit:bitOffset>
+                        <spirit:bitWidth>1</spirit:bitWidth>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>CPOL</spirit:name>
+                        <spirit:bitOffset>3</spirit:bitOffset>
+                        <spirit:bitWidth>1</spirit:bitWidth>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>CPHA</spirit:name>
+                        <spirit:bitOffset>2</spirit:bitOffset>
+                        <spirit:bitWidth>1</spirit:bitWidth>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>SPR</spirit:name>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>2</spirit:bitWidth>
+                    </spirit:field>
+                </spirit:register>
+
+                <!-- SPSR Register -->
+                <spirit:register>
+                    <spirit:name>SPSR</spirit:name>
+                    <spirit:addressOffset>0x01</spirit:addressOffset>
+                    <spirit:typeIdentifier>SPSR_c</spirit:typeIdentifier>
+                    <spirit:size>8</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x05</spirit:value>
+                        <spirit:mask>0xFF</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>SPIF</spirit:name>
+                        <spirit:bitOffset>7</spirit:bitOffset>
+                        <spirit:bitWidth>1</spirit:bitWidth>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>WCOL</spirit:name>
+                        <spirit:bitOffset>6</spirit:bitOffset>
+                        <spirit:bitWidth>1</spirit:bitWidth>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>WFFULL</spirit:name>
+                        <spirit:bitOffset>3</spirit:bitOffset>
+                        <spirit:bitWidth>1</spirit:bitWidth>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>WFEMPTY</spirit:name>
+                        <spirit:bitOffset>2</spirit:bitOffset>
+                        <spirit:bitWidth>1</spirit:bitWidth>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>RFFULL</spirit:name>
+                        <spirit:bitOffset>1</spirit:bitOffset>
+                        <spirit:bitWidth>1</spirit:bitWidth>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>RFEMPTY</spirit:name>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>1</spirit:bitWidth>
+                    </spirit:field>
+                </spirit:register>
+
+                <!-- SPDR Register -->
+                <spirit:register>
+                    <spirit:name>SPDR</spirit:name>
+                    <spirit:addressOffset>0x02</spirit:addressOffset>
+                    <spirit:typeIdentifier>SPDR_c</spirit:typeIdentifier>
+                    <spirit:size>8</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x00</spirit:value>
+                        <spirit:mask>0xFF</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>WriteBuffer</spirit:name>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>8</spirit:bitWidth>
+                    </spirit:field>
+                </spirit:register>
+
+                <!-- SPER Register -->
+                <spirit:register>
+                    <spirit:name>SPER</spirit:name>
+                    <spirit:addressOffset>0x03</spirit:addressOffset>
+                    <spirit:typeIdentifier>SPER_c</spirit:typeIdentifier>
+                    <spirit:size>8</spirit:size>
+                    <spirit:access>read-write</spirit:access>
+                    <spirit:reset>
+                        <spirit:value>0x00</spirit:value>
+                        <spirit:mask>0xFF</spirit:mask>
+                    </spirit:reset>
+                    <spirit:field>
+                        <spirit:name>ICNT</spirit:name>
+                        <spirit:bitOffset>6</spirit:bitOffset>
+                        <spirit:bitWidth>2</spirit:bitWidth>
+                    </spirit:field>
+                    <spirit:field>
+                        <spirit:name>ESPR</spirit:name>
+                        <spirit:bitOffset>0</spirit:bitOffset>
+                        <spirit:bitWidth>2</spirit:bitWidth>
+                    </spirit:field>
+                </spirit:register>
+            </spirit:addressBlock>
+        </spirit:memoryMap>
+    </spirit:memoryMaps>
+</spirit:component>
+

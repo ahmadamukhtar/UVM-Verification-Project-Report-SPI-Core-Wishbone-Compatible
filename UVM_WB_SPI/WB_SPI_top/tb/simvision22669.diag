@@ -1,0 +1,99 @@
+*** Message Type: info ***
+When: Thu Nov 28 12:58:35 PM PKT 2024
+SimVision started.
+Version: TOOL:  simvision(64)   23.09-s006
+User: cc
+Host: ncdc-0057
+Platform: Linux/x86_64/4.18.0-372.32.1.el8_6.x86_64
+Started: Thu Nov 28 12:58:35 PM PKT 2024
+Command: /home/cc/mnt/XCELIUM2309/tools.lnx86/simvision/bin/64bit/simvision.exe -connect dc:ncdc-0057:38607 -64BIT -nocopyright
+Work Directory: /home/cc/Documents/proj/UVM_SPI/top_SPI/tb
+ 
+*** Message Type: info ***
+When: Thu Nov 28 12:58:35 PM PKT 2024
+Create browser window: "Design Browser 1"
+ 
+*** Message Type: info ***
+When: Thu Nov 28 12:58:36 PM PKT 2024
+Create console window: "Console"
+ 
+*** Message Type: info ***
+When: Thu Nov 28 12:58:37 PM PKT 2024
+Connect to Simulator
+      Design: worklib.hw_top:sv
+   Languages: verilog assertion
+   Simulator: XM-Sim
+     Version: TOOL:        xmsim(64)       23.09-s006
+        User: cc
+        Host: ncdc-0057
+Time Started: Thu Nov 28 12:58:34 PM PKT 2024
+  Process ID: 22552
+   Directory: /home/cc/Documents/proj/UVM_SPI/top_SPI/tb
+     Command: xrun -f run.f -access +rwc -gui
+
+ 
+*** Message Type: info ***
+When: Thu Nov 28 12:58:37 PM PKT 2024
+Create utility window: "Properties"
+ 
+*** Message Type: info ***
+When: Thu Nov 28 01:00:13 PM PKT 2024
+Exit XM-Sim: user
+      Design: worklib.hw_top:sv
+   Languages: verilog assertion
+   Simulator: XM-Sim
+     Version: TOOL:        xmsim(64)       23.09-s006
+        User: cc
+        Host: ncdc-0057
+Time Started: Thu Nov 28 12:58:34 PM PKT 2024
+  Process ID: 22552
+   Directory: /home/cc/Documents/proj/UVM_SPI/top_SPI/tb
+     Command: xrun -f run.f -access +rwc -gui
+
+ 
+*** Message Type: error ***
+When: Thu Nov 28 01:00:13 PM PKT 2024
+XM-Sim Crashed:
+      Design: worklib.hw_top:sv
+   Languages: verilog assertion
+   Simulator: XM-Sim
+     Version: TOOL:        xmsim(64)       23.09-s006
+        User: cc
+        Host: ncdc-0057
+Time Started: Thu Nov 28 12:58:34 PM PKT 2024
+  Process ID: 22552
+   Directory: /home/cc/Documents/proj/UVM_SPI/top_SPI/tb
+     Command: xrun -f run.f -access +rwc -gui
+      Design: worklib.hw_top:sv
+   Languages: verilog assertion
+   Simulator: XM-Sim
+     Version: TOOL:   xmsim(64)       23.09-s006
+        User: cc
+        Host: ncdc-0057
+Time Started: Thu Nov 28 12:58:34 PM PKT 2024
+  Process ID: 22552
+   Directory: /home/cc/Documents/proj/UVM_SPI/top_SPI/tb
+     Command: xrun -f run.f -access +rwc -gui
+
+Outstanding STRAP Requests:
+        strap::report enable out
+ 
+*** Message Type: info ***
+When: Thu Nov 28 03:50:17 PM PKT 2024
+Recall Simulator
+ 
+*** Message Type: info ***
+When: Thu Nov 28 03:50:26 PM PKT 2024
+Connect to Simulator
+      Design: worklib.hw_top:sv
+   Languages: verilog assertion
+   Simulator: XM-Sim
+     Version: TOOL:        xmsim(64)       23.09-s006
+        User: cc
+        Host: ncdc-0057
+Time Started: Thu Nov 28 03:50:26 PM PKT 2024
+  Process ID: 32124
+   Directory: /home/cc/Documents/proj/UVM_SPI/top_SPI/tb
+     Command: xrun -f run.f -access +rwc -tcl -nolog -nocopyright -neverwarn
+
+ 

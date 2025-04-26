@@ -1,0 +1,38 @@
+ ** -- Register/Field configuration -- **
+
+
+r SPC_cfgSPC1 6
+SPR 2 0 RW 0 0 1 1 1
+CPHA 1 2 RW 0 0 1 1 1
+CPOL 1 3 RW 0 0 1 1 1
+MSTR 1 4 RW 0 1 1 1 1
+SPE 1 6 RW 0 0 1 1 1
+SPIE 1 7 RW 0 0 1 1 1
+
+r SPD_cfgSPD2 1
+WriteBuffer 8 0 RW 0 0 1 1 1
+
+r SPE_cfgSPE3 2
+ESPR 2 0 RW 0 0 1 1 1
+ICNT 2 6 RW 0 0 1 1 1
+
+r SPS_cfgSPS4 6
+RFEMPTY 1 0 RW 0 1 1 1 1
+RFFULL 1 1 RW 0 0 1 1 1
+WFEMPTY 1 2 RW 0 1 1 1 1
+WFFULL 1 3 RW 0 0 1 1 1
+WCOL 1 6 RW 0 0 1 1 1
+SPIF 1 7 RW 0 0 1 1 1
+
+
+ ** --  RegFiles configuration -- **
+
+
+ ** --  Blocks configuration -- **
+
+b WB_SPI_regs.WB_SPI_memory_WB_SPI_registers 4 0 0 0 1 1 1
+SPCR_c SPC_cfgSPC1 SPCR 0 1 RW 0 1 8
+SPDR_c SPD_cfgSPD2 SPDR 2 1 RW 0 1 8
+SPER_c SPE_cfgSPE3 SPER 3 1 RW 0 1 8
+SPSR_c SPS_cfgSPS4 SPSR 1 1 RW 0 1 8
+
